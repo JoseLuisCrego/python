@@ -53,7 +53,7 @@ Introducción a GIT y entender su finalidad. Ver los primeros ejemplos práctico
     1.- Una vez vinculado el repositorio externo: "git pull [nombre_origen_remoto]/[nombre_rama_remoto_que_queremos_descargar]"
 
 - Pasos para vincular y descargar TODO el contenido de un repositorio remoto a nuestro GIT local de nuestro Workspace:
-    1.- git clone [URL_repositorio_remoto] {directorio_donde_descargar}
+    1.- "git clone [URL_repositorio_remoto] {directorio_donde_descargar}"
 
 - Pasos para descargar el contenido de una rama en particular de un repositorio remoto a nuestro GIT local de nuestro Workspace:
     1.- Una vez vinculado el repositorio externo: "git fetch --all". Esto actualiza y vincula la información de todas las ramas del repositorio remoto a nuestro repositorio local.
