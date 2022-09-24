@@ -1,7 +1,0 @@
--- Objetivo: introducción a GIT o al software de control de versiones.
-
--- Manual sencillo de entender: https://rogerdudler.github.io/git-guide/index.es.html
-
--- Repositorio de pruebas para las clases: https://github.com/JoseLuisCrego/python
-
-

@@ -1,0 +1,77 @@
+-- OBJETIVO: 
+---------------------------------------------------------------------------------
+Introducción a GIT y entender su finalidad. Ver los primeros ejemplos prácticos.
+
+
+
+--TEORÍA:
+---------------------------------------------------------------------------------
+
+- GIT es un sistema de control de versiones o VCS (Version Control System).
+- SU manera de almacenaje es distribuida.
+
+- Sirve principalmente para:
+    + Almacenar código de manera segura.
+    + Poder gestionar un mismo proyecto o código compartido por varias personas.
+    + Poder gestionar código por una misma persona pero en distintas etapas de proyecto.
+- Se basa en repositorios, que son "almacenes" relacionados normalmente con un proyecto.
+
+- Conceptos clave:
+    + Stage etapa de espera, como un backstage.
+    + Commit confirmación de los cambios en stage. Se entendería como un conjunto de cambios realizados con un objetivo común.
+    + Branch branch o rama, es el seguimiento que tiene el código durante un conjunto de versiones.
+    + Repository: repositorio o "almacén" que contiene todas las ramas, cambios,m evoluciones que ha tenido un mismo proyecto durante su cliclo de vida.
+    + Merge: fusionar los cambios de una rama distinta a la nuestra actual con la nuestra, sería combinar los cambios de ambas.
+    + Remote repository: igual que un repositorio, pero ubicado en una máquina (normalmente un servidor dedicado) distinta a la nuestra.
+        * GitHub, GitLab, Azure DevOps... serían ejemplos de servidores dedicados que ofrecen la posiblidad de tener el código de tu proyecto en uno o varios respositorios.
+    + Push: "empujar" o subir código, o mejor dicho un conjunto de cambios o commit, a un repositorio remoto.
+    + Pull: "coger" o descargar código, o mejor dicho un conjunto de cambios o commit, de un repositorio remoto.
+
+- Pasos para empezar a usar GIT y añadirl a nuestro entorno de trabajo o Workspace:
+    1.- Descargar e instalar GIT
+    2.- Crear un repositorio local: "git init" 
+
+- Pasos para añadir cambios a un repositorio local:
+    1.- Desarrollo del código
+    2.- Stage: "git add *"
+    3.- Commit "git commit -m [etiqueta o descripcion del commit]"
+
+- Pasos para crear una rama y cambiarnos a la misma:
+    1.- Crear una rama: "git checkout -b [nombre_de_la_rama]"
+    2.- Para ver todas las ramas actuales: "git branch -a"
+
+- Pasos para actualizar los cambios de otra rama a la actual:
+    1.- Fusionar cambios: "git merge [nombre_de_la_rama]"
+
+- Pasos para vincular un repositorio remoto a nuestro GIT local de nuestro Workspace y subir cambios:
+    1.- Vincular un repositorio externo: "git remote add [nombre_origen_remoto] [URL_repositorio_remoto]"
+
+- Pasos para subir cambios a un repositorio remoto:
+    1.- Una vez tenemos cambios en commit y un repositorio externo vinculado: "git push [nombre_origen_remoto] -u [branch]" 
+
+- Pasos para actualizar/fusionar los cambios remotos a nuestra rama local actual:
+    1.- Una vez vinculado el repositorio externo: "git pull [nombre_origen_remoto]/[nombre_rama_remoto_que_queremos_descargar]"
+
+- Pasos para vincular y descargar TODO el contenido de un repositorio remoto a nuestro GIT local de nuestro Workspace:
+    1.- git clone [URL_repositorio_remoto] {directorio_donde_descargar}
+
+- Pasos para descargar el contenido de una rama en particular de un repositorio remoto a nuestro GIT local de nuestro Workspace:
+    1.- Una vez vinculado el repositorio externo: "git fetch --all". Esto actualiza y vincula la información de todas las ramas del repositorio remoto a nuestro repositorio local.
+    2a.- Descargar los cambios de la rama en cuestión a nuestra rama local actual: "git merge [nombre_origen_remoto]/[nombre_rama_remoto_que_queremos_descargar]"
+    2b.- Descargar los cambios de la rama en cuestión y movernos a ella (y crearla en caso de ésta no existir): "git checkout -b [nombre_rama_local_donde_descargar] [nombre_origen_remoto]/[nombre_rama_remoto_que_queremos_descargar]"
+
+
+
+--INFORMACIÓN:
+---------------------------------------------------------------------------------
+
+- DESCARGAR GIT: https://git-scm.com/downloads
+
+- GUÍAS: 
+    + https://rogerdudler.github.io/git-guide/index.es.html
+    + https://www.atlassian.com/es/git/tutorials/learn-git-with-bitbucket-cloud
+    + https://github.com/Kunena/Kunena-Forum/wiki
+
+- Repositorio de pruebas para las clases: https://github.com/JoseLuisCrego/python
+
+
